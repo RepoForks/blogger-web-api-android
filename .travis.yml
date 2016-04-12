@@ -8,11 +8,11 @@ android:
 licenses:
    - 'android-sdk-license-.+'
 env:
-  global:
-  - CI_HOME='/src'
+  global:  
    # install timeout in minutes (2 minutes by default)
     - ADB_INSTALL_TIMEOUT=8
 before_install:
+  - cd /src
   - chmod +x gradlew
 
 sudo: false
