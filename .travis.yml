@@ -15,7 +15,7 @@ licenses:
 env:
   global:
    # install timeout in minutes (2 minutes by default)
-    - ADB_INSTALL_TIMEOUT=8
+    - ADB_INSTALL_TIMEOUT=20
 before_install:
   - chmod +x gradlew
   - ./gradlew assemble
